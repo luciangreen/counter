@@ -1,0 +1,402 @@
+Counter: 200 inputs and outputs, from real runs (npm run ios writes this file; npm test checks it).
+
+1. colName(10927)
+   => "PDH"
+2. colIndex("Q")
+   => 16
+3. parseRef("c10")
+   => {"col":2,"row":9}
+4. parseFormula("A1/B2")
+   => {"t":"bin","op":"/","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B2"}}
+5. compute([[50,"music",39.46],[-46,-30,45.41],[24,-35,"=A1/B2"]], "C3")
+   => "-1.66666666667"
+6. literal("=A1")
+   => "=A1"
+7. formatValue(49, "text")
+   => "49"
+8. colName(14101)
+   => "TVJ"
+9. colIndex("C")
+   => 2
+10. parseRef("ZZ999")
+   => {"col":701,"row":998}
+11. parseFormula("SUM(A1:B2)")
+   => {"t":"call","f":"SUM","args":[{"t":"range","v":"A1:B2"}]}
+12. compute([["thinks",51,95],[-10,80.79,16],["about",12,"=MAX(A1:C1)*2"]], "C3")
+   => "190"
+13. literal("  7 ")
+   => 7
+14. formatValue(95.4, "money")
+   => "$95.40"
+15. colName(7130)
+   => "JNG"
+16. colIndex("C")
+   => 2
+17. parseRef("A1")
+   => {"col":0,"row":0}
+18. parseFormula("IF(A1>B1,\"more\",\"less\")")
+   => {"t":"call","f":"IF","args":[{"t":"bin","op":">","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B1"}},{"t":"str","v":"more"},{"t":"str","v":"less"}]}
+19. compute([[80,"about",90.91],[67,26,-47],[30.79,43,"=ABS(B1)"]], "C3")
+   => "#VALUE!"
+20. literal("hello")
+   => "hello"
+21. formatValue(42910, "percent")
+   => "4,291,000%"
+22. colName(1061)
+   => "ANV"
+23. colIndex("ZZ")
+   => 701
+24. parseRef("B$7")
+   => {"col":1,"row":6}
+25. parseFormula("ABS(B1)")
+   => {"t":"call","f":"ABS","args":[{"t":"ref","v":"B1"}]}
+26. compute([["simple","thinks",29],["buys","tree",99.84],["reads",38.45,"=A1/B2"]], "C3")
+   => "#VALUE!"
+27. literal("false")
+   => false
+28. formatValue(4, "text")
+   => "4"
+29. colName(15)
+   => "P"
+30. colIndex("BA")
+   => 52
+31. parseRef("A0")
+   => {"col":0,"row":-1}
+32. parseFormula("ABS(B1)")
+   => {"t":"call","f":"ABS","args":[{"t":"ref","v":"B1"}]}
+33. compute([[65,-48,8.36],[55.06,27,20],[80.2,35,"=ABS(B1)"]], "C3")
+   => "48"
+34. literal("42")
+   => 42
+35. formatValue(0.6, "money")
+   => "$0.60"
+36. colName(7096)
+   => "JLY"
+37. colIndex("AAA")
+   => 702
+38. parseRef("$Z9")
+   => {"col":25,"row":8}
+39. parseFormula("A1+B1")
+   => {"t":"bin","op":"+","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B1"}}
+40. compute([[3,9,29],[15.94,1,"number"],[78.64,32,"=ROUND(A1/3,2)"]], "C3")
+   => "1"
+41. literal("50%")
+   => 0.5
+42. formatValue(64410, "integer")
+   => "64410"
+43. colName(342)
+   => "ME"
+44. colIndex("Q")
+   => 16
+45. parseRef("ZZ999")
+   => {"col":701,"row":998}
+46. parseFormula("A1/B2")
+   => {"t":"bin","op":"/","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B2"}}
+47. compute([[59.45,92,"idea"],[31,37.41,-2],[-47,22,"=AVERAGE(A1:A3)"]], "C3")
+   => "14.4833333333"
+48. literal("  7 ")
+   => 7
+49. formatValue(54, "percent")
+   => "5,400%"
+50. colName(784)
+   => "ADE"
+51. colIndex("ZZ")
+   => 701
+52. parseRef("AA100")
+   => {"col":26,"row":99}
+53. parseFormula("A1&\" units\"")
+   => {"t":"bin","op":"&","a":{"t":"ref","v":"A1"},"b":{"t":"str","v":" units"}}
+54. compute([["sells",-19,-2],["value","proof",26],[-32,62.85,"=A1^2"]], "C3")
+   => "#VALUE!"
+55. literal("false")
+   => false
+56. formatValue(-0.14, "money")
+   => "-$0.14"
+57. colName(23)
+   => "X"
+58. colIndex("AA")
+   => 26
+59. parseRef("c10")
+   => {"col":2,"row":9}
+60. parseFormula("C1")
+   => {"t":"ref","v":"C1"}
+61. compute([[33.71,99,"sells"],[70.78,9,-43],[-27,30,"=IF(A1>B1,\"more\",\"less\")"]], "C3")
+   => "less"
+62. literal("  7 ")
+   => 7
+63. formatValue(0.7598, "date")
+   => "0.7598"
+64. colName(21)
+   => "V"
+65. colIndex("C")
+   => 2
+66. parseRef("A0")
+   => {"col":0,"row":-1}
+67. parseFormula("A1+B1")
+   => {"t":"bin","op":"+","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B1"}}
+68. compute([[84,58,39],["buys",-43,31],[40.44,28,"=COUNT(A1:C3)"]], "C3")
+   => "7"
+69. literal("-3.5")
+   => -3.5
+70. formatValue(-17, "percent")
+   => "-1,700%"
+71. colName(19232)
+   => "ABKS"
+72. colIndex("AA")
+   => 26
+73. parseRef("1A")
+   => null
+74. parseFormula("COUNT(A1:C3)")
+   => {"t":"call","f":"COUNT","args":[{"t":"range","v":"A1:C3"}]}
+75. compute([[89,16,47.48],[-45,21.28,91],[12,"quickly","=IF(A1>B1,\"more\",\"less\")"]], "C3")
+   => "more"
+76. literal("2026-11-09")
+   => "2026-11-09"
+77. formatValue(0.4753, "number")
+   => "0.48"
+78. colName(117)
+   => "DN"
+79. colIndex("ZZ")
+   => 701
+80. parseRef("B$7")
+   => {"col":1,"row":6}
+81. parseFormula("SUM(A1:B2)")
+   => {"t":"call","f":"SUM","args":[{"t":"range","v":"A1:B2"}]}
+82. compute([[19,90.65,38],[81,-11,1],["about",81.16,"=MIN(A1:A3)-1"]], "C3")
+   => "18"
+83. literal("1e3")
+   => 1000
+84. formatValue(17.4, "integer")
+   => "17.4"
+85. colName(6)
+   => "G"
+86. colIndex("A")
+   => 0
+87. parseRef("AA100")
+   => {"col":26,"row":99}
+88. parseFormula("A1+B1")
+   => {"t":"bin","op":"+","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B1"}}
+89. compute([[45.06,-13,8],["algorithm","music",36],["book","prolog","=SUM(A1:A3)/COUNT(A1:A3)"]], "C3")
+   => "45.06"
+90. literal("1,200")
+   => 1200
+91. formatValue(-17, "money")
+   => "-$17.00"
+92. colName(6636)
+   => "IUG"
+93. colIndex("XFD")
+   => 16383
+94. parseRef("c10")
+   => {"col":2,"row":9}
+95. parseFormula("C1")
+   => {"t":"ref","v":"C1"}
+96. compute([[69,49,80.15],["logic",12,-48],[71.83,96,"=SUM(A1:A3)/COUNT(A1:A3)"]], "C3")
+   => "70.415"
+97. literal("$15")
+   => 15
+98. formatValue(-20000, "date")
+   => "-20000"
+99. colName(13756)
+   => "TIC"
+100. colIndex("XFD")
+   => 16383
+101. parseRef("AA100")
+   => {"col":26,"row":99}
+102. parseFormula("AVERAGE(A1:A3)")
+   => {"t":"call","f":"AVERAGE","args":[{"t":"range","v":"A1:A3"}]}
+103. compute([[23.8,68,-42],[71,65,"proof"],[15,29,"=A1^2"]], "C3")
+   => "566.44"
+104. literal("2026-11-09")
+   => "2026-11-09"
+105. formatValue(21.74, "money")
+   => "$21.74"
+106. colName(18390)
+   => "AAEI"
+107. colIndex("C")
+   => 2
+108. parseRef("B$7")
+   => {"col":1,"row":6}
+109. parseFormula("IF(A1>B1,\"more\",\"less\")")
+   => {"t":"call","f":"IF","args":[{"t":"bin","op":">","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B1"}},{"t":"str","v":"more"},{"t":"str","v":"less"}]}
+110. compute([[9.91,55.63,-15],[2,19,39.71],[41,41,"=ROUND(A1/3,2)"]], "C3")
+   => "3.3"
+111. literal("false")
+   => false
+112. formatValue(0.62, "number")
+   => "0.62"
+113. colName(17773)
+   => "ZGP"
+114. colIndex("AAA")
+   => 702
+115. parseRef("ZZ999")
+   => {"col":701,"row":998}
+116. parseFormula("A1+B1")
+   => {"t":"bin","op":"+","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B1"}}
+117. compute([[2,84,"number"],[56.45,48,51.43],[-16,-14,"=A1^2"]], "C3")
+   => "4"
+118. literal("=A1")
+   => "=A1"
+119. formatValue(1260, "date")
+   => "1260"
+120. colName(11675)
+   => "QGB"
+121. colIndex("AZ")
+   => 51
+122. parseRef("$Z9")
+   => {"col":25,"row":8}
+123. parseFormula("AVERAGE(A1:A3)")
+   => {"t":"call","f":"AVERAGE","args":[{"t":"range","v":"A1:A3"}]}
+124. compute([[1,56.95,"false"],[35.45,26,"logic"],[28,13.48,"=C1"]], "C3")
+   => "FALSE"
+125. literal("$15")
+   => 15
+126. formatValue(-20, "integer")
+   => "-20"
+127. colName(13)
+   => "N"
+128. colIndex("C")
+   => 2
+129. parseRef("B$7")
+   => {"col":1,"row":6}
+130. parseFormula("A1*")
+   => {"error":"the formula ends too soon"}
+131. compute([[14.49,"happy",41],[81.71,79,87],[76.63,84.91,"=A1*"]], "C3")
+   => "#VALUE!"
+132. literal("$15")
+   => 15
+133. formatValue(0.32, "money")
+   => "$0.32"
+134. colName(8426)
+   => "LLC"
+135. colIndex("Z")
+   => 25
+136. parseRef("$Z9")
+   => {"col":25,"row":8}
+137. parseFormula("A1/B2")
+   => {"t":"bin","op":"/","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B2"}}
+138. compute([[15.33,55.67,37],[93,11,26],[63.12,82,"=AVERAGE(A1:A3)"]], "C3")
+   => "57.15"
+139. literal("1,200")
+   => 1200
+140. formatValue(30980, "percent")
+   => "3,098,000%"
+141. colName(7)
+   => "H"
+142. colIndex("ZZ")
+   => 701
+143. parseRef("A1")
+   => {"col":0,"row":0}
+144. parseFormula("IF(A1>B1,\"more\",\"less\")")
+   => {"t":"call","f":"IF","args":[{"t":"bin","op":">","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B1"}},{"t":"str","v":"more"},{"t":"str","v":"less"}]}
+145. compute([[54,16.77,64],["teacher",50,-16],[-5,23,"=SUM(A1:B2)"]], "C3")
+   => "120.77"
+146. literal("2026-11-09")
+   => "2026-11-09"
+147. formatValue(63.06, "date")
+   => "63.06"
+148. colName(245)
+   => "IL"
+149. colIndex("Z")
+   => 25
+150. parseRef("B$7")
+   => {"col":1,"row":6}
+151. parseFormula("MIN(A1:A3)-1")
+   => {"t":"bin","op":"-","a":{"t":"call","f":"MIN","args":[{"t":"range","v":"A1:A3"}]},"b":{"t":"num","v":1}}
+152. compute([[21,"number",-6],["the","writes",8],[39.84,16,"=SUM(A1:A3)/COUNT(A1:A3)"]], "C3")
+   => "30.42"
+153. literal("TRUE")
+   => true
+154. formatValue(48.27, "number")
+   => "48.27"
+155. colName(0)
+   => "A"
+156. colIndex("C")
+   => 2
+157. parseRef("$Z9")
+   => {"col":25,"row":8}
+158. parseFormula("A1&\" units\"")
+   => {"t":"bin","op":"&","a":{"t":"ref","v":"A1"},"b":{"t":"str","v":" units"}}
+159. compute([[0,21,86.59],[49,"and","value"],[3,-1,"=A1&\" units\""]], "C3")
+   => "0 units"
+160. literal("-3.5")
+   => -3.5
+161. formatValue(-3000, "percent")
+   => "-300,000%"
+162. colName(4566)
+   => "FSQ"
+163. colIndex("AA")
+   => 26
+164. parseRef("c10")
+   => {"col":2,"row":9}
+165. parseFormula("COUNT(A1:C3)")
+   => {"t":"call","f":"COUNT","args":[{"t":"range","v":"A1:C3"}]}
+166. compute([[-4,4,-17],[66,98.47,64.12],[-1,81.14,"=IF(A1>B1,\"more\",\"less\")"]], "C3")
+   => "less"
+167. literal("1e3")
+   => 1000
+168. formatValue(-28, "percent")
+   => "-2,800%"
+169. colName(2)
+   => "C"
+170. colIndex("Z")
+   => 25
+171. parseRef("c10")
+   => {"col":2,"row":9}
+172. parseFormula("A1/B2")
+   => {"t":"bin","op":"/","a":{"t":"ref","v":"A1"},"b":{"t":"ref","v":"B2"}}
+173. compute([[73,72,7],[63,"list",7],[37,66.19,"=NOPE(1)"]], "C3")
+   => "#NAME?"
+174. literal("  7 ")
+   => 7
+175. formatValue(66, "date")
+   => "66"
+176. colName(16)
+   => "Q"
+177. colIndex("C")
+   => 2
+178. parseRef("ZZ999")
+   => {"col":701,"row":998}
+179. parseFormula("A1*")
+   => {"error":"the formula ends too soon"}
+180. compute([[-26,-3,"sells"],[17.62,37.97,32],[26.78,51,"=ABS(B1)"]], "C3")
+   => "3"
+181. literal("$15")
+   => 15
+182. formatValue(70360, "")
+   => "70360"
+183. colName(7792)
+   => "KMS"
+184. colIndex("ZZ")
+   => 701
+185. parseRef("1A")
+   => null
+186. parseFormula("A1^2")
+   => {"t":"bin","op":"^","a":{"t":"ref","v":"A1"},"b":{"t":"num","v":2}}
+187. compute([[11,68.12,50],["simple",-37,"with"],[25,"quickly","=IF(A1>B1,\"more\",\"less\")"]], "C3")
+   => "less"
+188. literal("hello")
+   => "hello"
+189. formatValue(34, "date")
+   => "34"
+190. colName(15)
+   => "P"
+191. colIndex("AAA")
+   => 702
+192. parseRef("1A")
+   => null
+193. parseFormula("NOPE(1)")
+   => {"t":"call","f":"NOPE","args":[{"t":"num","v":1}]}
+194. compute([[48,84.16,74.76],[25,-2,-8],[54.84,-25,"=A1^2"]], "C3")
+   => "2304"
+195. literal("hello")
+   => "hello"
+196. formatValue(81.03, "integer")
+   => "81.03"
+197. colName(7853)
+   => "KPB"
+198. colIndex("AA")
+   => 26
+199. parseRef("c10")
+   => {"col":2,"row":9}
+200. parseFormula("AVERAGE(A1:A3)")
+   => {"t":"call","f":"AVERAGE","args":[{"t":"range","v":"A1:A3"}]}

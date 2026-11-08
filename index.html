@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Counter</title>
+  <link rel="stylesheet" href="/shared/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="bar cbar">
+    <h1>Counter</h1>
+    <input id="title" class="title" aria-label="Title" value="Untitled">
+    <span class="spacer"></span>
+    <button id="new">New</button>
+    <button id="open">Open…</button>
+    <button id="save">Save</button>
+    <select id="export" aria-label="Export"><option value="">Export…</option><option value="csv">Values (.csv)</option><option value="csvf">Formulas (.csv)</option><option value="pl">Prolog form (.pl)</option></select>
+  </header>
+  <nav id="sheets" class="sheets" aria-label="Sheets"></nav>
+  <main class="counter">
+    <section class="panel gridpanel">
+      <div class="formulabar">
+        <span id="where" class="where mono" aria-live="polite">A1</span>
+        <input id="formula" class="mono" type="text" aria-label="Cell contents" placeholder="Type a number, text or =formula, then Enter">
+      </div>
+      <div class="toolbar" role="toolbar">
+        <select id="format" aria-label="Number format"></select>
+        <button id="sum" title="Total the selected column below it">Σ Total</button>
+        <button id="fill" title="Copy the top formula of the selection down">Fill down</button>
+        <button id="insRow">Insert row</button>
+        <button id="delRow">Delete row</button>
+        <span class="sep"></span>
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <span id="note" class="quiet"></span>
+      </div>
+      <div class="gridwrap" id="gridwrap"><table id="grid" class="grid" tabindex="0" aria-label="Sheet"></table></div>
+      <form id="say" class="row say"><input id="sayText" type="text" placeholder='Tell Lucian: "make column C a total", "add a row for insurance with 900", "graph sales by region"'><button>Do</button></form>
+      <p id="reply" class="quiet" aria-live="polite"></p>
+    </section>
+    <aside class="panel side">
+      <nav class="tabs" id="tabs" role="tablist"></nav>
+      <div id="tool"></div>
+    </aside>
+  </main>
+</body>
+</html>

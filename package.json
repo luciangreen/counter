@@ -1,0 +1,10 @@
+{
+  "name": "counter",
+  "version": "0.1.0",
+  "description": "Counter: the Lucian Office spreadsheet, with formulas, custom fields, sections, segment graphs and proformas",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "license": "BSD-3-Clause"
+}

@@ -4,7 +4,8 @@
   "description": "Counter: the Lucian Office spreadsheet, with formulas, custom fields, sections, segment graphs and proformas",
   "type": "module",
   "scripts": {
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "ios": "node io/make-ios.mjs"
   },
   "license": "BSD-3-Clause"
 }

@@ -209,3 +209,9 @@ test("Counter's commands, done as the character and undone", async () => {
   assert.match(await run('make column sales a total'), /C8 now totals C2 to C7/);
   assert.equal(compute(ctx.sheet()).value('C8'), 3550);
 });
+
+test('ROUND takes halves away from zero, as in Excel', () => {
+  const s = sheet([['=ROUND(2.5,0)', '=ROUND(-2.5,0)', '=ROUND(-1.005,2)', '=ROUND(1234.5,-2)', '=ROUND(-0.4,0)']]);
+  const r = compute(s);
+  assert.deepEqual(['A1', 'B1', 'C1', 'D1', 'E1'].map((k) => r.value(k)), [3, -3, -1.01, 1200, 0]);
+});

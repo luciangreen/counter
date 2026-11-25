@@ -55,12 +55,12 @@ git clone https://github.com/luciangreen/counter
 
 | Kind | Examples |
 | --- | --- |
-| Arithmetic | `+ - * / ^`, `%` (as in `50%`), `&` (joins text), `= <> < > <= >=` |
+| Arithmetic | `+ - * / ^`, `%` (as in `50%`), `&` (joins text), `= <> < > <= >=`. Repeated powers work from the right, as in mathematics: `2^3^2` is 512 (Excel works from the left and gives 64; write `(2^3)^2` for that). |
 | Ranges | `B2:B9`, whole columns `C:C`; `$B$2` stays fixed when filled |
 | Totals | `SUM`, `AVERAGE`, `MIN`, `MAX`, `COUNT`, `COUNTA`, `PRODUCT` |
 | Conditions | `IF`, `IFERROR`, `AND`, `OR`, `NOT`, `SUMIF`, `COUNTIF`, `AVERAGEIF` (criteria such as `">100"` or `"north"`) |
 | Lookup | `VLOOKUP(key, range, column)` |
-| Numbers | `ROUND`, `ABS`, `SQRT`, `POWER`, `MOD`, `PMT(rate, periods, amount)` |
+| Numbers | `ROUND` (halves away from zero, as in Excel: `ROUND(-2.5, 0)` is -3), `ABS`, `SQRT`, `POWER`, `MOD`, `PMT(rate, periods, amount)` |
 | Text | `CONCAT`, `LEN`, `UPPER`, `LOWER` |
 | Custom fields | `=Price*Quantity*(1+Tax)` |
 
